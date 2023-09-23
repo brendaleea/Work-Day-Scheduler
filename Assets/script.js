@@ -20,4 +20,24 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
+
+  var currentDateDisplay = $("#currentDay");
+  currentDateDisplay.text(dayjs().format("MM/DD/YYYY"));
+  // console.log (dayjs().format("MM/DD/YYYY"))
+  var currentHour = dayjs().hour();
+  var timeBlock = $(".time-block");
+  console.log(currentHour);
+  timeBlock.each(function (index) {
+    var timeBlockID= $(this).attr('id').split("-")[1]
+  console.log(timeBlockID)
+  if (currentHour > timeBlockID) {
+   $ (this) .addClass("past");
+  }
+if (currentHour < timeBlockID){
+  $(this).addClass("future")
+}
+if (currentHour == timeBlockID){
+  $(this).addClass("present")}
+
+  });
 });
