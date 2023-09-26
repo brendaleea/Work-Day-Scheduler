@@ -10,8 +10,9 @@ This application allows a user to save events for each hour of a typical working
 
 ## Visuals
 
-![Password Generator](./Images/PW%20Generator%20screenshot.png)
+![Workday Scheduler](./Assets/images/Workday%20scheduler.jpg)
 Link to deployed website:
+https://brendaleea.github.io/Work-Day-Scheduler/
 
 
 
